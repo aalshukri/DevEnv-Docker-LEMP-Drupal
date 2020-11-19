@@ -18,9 +18,19 @@ COPY ./conf/my.cnf /etc/mysql/my.cnf
 #Copy setup scripts
 COPY ./setup /setup
 
+
+# Drupal drush install
+RUN composer global require consolidation/cgr &&  \
+    PATH="/root/.composer/vendor/bin:$PATH" && \    
+    cgr drush/drush
+# add to path so drush work from cmd
+ENV PATH="/root/.composer/vendor/bin:${PATH}"
+
+
 #Copy startup script
 COPY ./conf/stack-startup.sh /usr/bin/stack-startup.sh
 RUN chmod +x /usr/bin/stack-startup.sh
+
 
 
 #Start nginx
