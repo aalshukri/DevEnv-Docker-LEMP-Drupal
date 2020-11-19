@@ -97,7 +97,7 @@ https://localhost/drupalwebapp/
 
 https://127.0.0.1/drupalwebapp/
 
-Served from Drupal application '/www/drupalwebapp/public'
+Served from Drupal application '/www/drupalwebapp/web'
 
 
 #### MySQL
@@ -115,4 +115,10 @@ Use the credentials in the command below to access mysql in your docker containe
 ___
 
 This project is based on 
-<a href="https://github.com/aalshukri/DevEnv-Docker-LEMP-Laravel">https://github.com/aalshukri/DevEnv-Docker-LEMP-Laravel</a>
+<a href="https://github.com/aalshukri/DevEnv-Docker-LEMP-Laravel">https://github.com/aalshukri/DevEnv-Docker-LEMP-Laravel</a>.
+
+Main differences between DevEnv-Docker-LEMP-Laravel and DevEnv-Docker-LEMP-Drupal
+is the following:
+- Ubuntu 20.04 from 18.04
+- PHP 7.4 (php7.4-fpm.sock) from 7.2
+
