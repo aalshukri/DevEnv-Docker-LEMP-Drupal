@@ -15,8 +15,6 @@ To get this docker container up and running simply build and start using the fol
 
 `> ./start.sh`
 
-`> ./setup.sh`
-
 You can access the application at `https://127.0.0.1/drupalwebapp/`
 
 Once finished call the stop command to bring down docker container and application.
@@ -81,16 +79,6 @@ To connect directly to this container (LEMP server)
 To stop the docker container use
 
 `> docker-compose down`
-
-
-## Setup
-
-The first time you build and run your docker container, 
-you will need to execute a setup process.
-This is essentially a composer install command 
-to install necessary components for Drupal application
-
-...
 
 
 ## Access 
