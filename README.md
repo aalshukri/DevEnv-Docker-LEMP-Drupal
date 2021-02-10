@@ -112,6 +112,17 @@ Use the credentials in the command below to access mysql in your docker containe
 `> mysql -h 0.0.0.0 -u drupal_user -p`
 
 
+#### PhpMyAdmin
+
+You can access the database using phpmyadmin within this project.
+Naviagate to this url `http://127.0.0.1:8181/index.php`
+
+Enter the following details
+
+- Server: drupalwebapp
+- Username: drupal_user
+- Password: password
+
 ___
 
 This project is based on 
