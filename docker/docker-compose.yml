@@ -23,3 +23,22 @@ services:
     networks:
       - lempnet          
     tty: true
+
+
+  # DB access via PHP my admin
+  phpmyadmin:
+#    image: phpmyadmin/phpmyadmin
+    image: corbinu/docker-phpmyadmin
+    container_name: drupalwebapp-phpmyadmin
+    environment:
+      PMA_HOST: app
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+      MYSQL_PORT_3306_TCP_ADDR: db
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: password
+    restart: always
+    ports:
+      - 8081:80
+    networks:
+      - lempnet          
